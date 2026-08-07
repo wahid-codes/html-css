@@ -197,7 +197,7 @@ body {
 
 .grid {
   display: grid;
-  gap: 9.6rem;
+  gap: 5.2rem;
 }
 
 .grid--3-cols {
@@ -225,32 +225,61 @@ body {
 }
 
 .car {
-  box-shadow: 0 24px 48px rgb(255, 255, 255, 0.6);
-  border-radius: 11px;
-  overflow: hidden;
-}
-
-.car-tittle {
-  font-size: 20px;
-  font-style: italic;
-  color: #fff;
-  font-weight: 600;
-  margin-top: 16px;
-  margin-bottom: 36px;
-  margin-left: 28px;
-}
-
-.car-attirbutes {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  overflow: hidden;
+  text-align: center;
+  transition: all 0.2s;
+  padding-bottom: 25px;
+  border-radius: 11px;
+  box-shadow: 0 4px 32px #dfc570;
 }
 
-.car-attirbute {
-  font-size: 18px;
-  list-style: none;
+.car:hover {
+  transform: translateY(-16px);
 }
 
-.car-attirbute {
+.car-title {
+  font-size: 1.6rem;
   color: #fff;
+  font-weight: 600;
+  margin: 24px 20px;
+  min-height: 48px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.car-attributes {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.car-attribute {
+  list-style: none;
+  font-size: 1.8rem;
+  color: #ccc;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding-bottom: 12px;
+}
+
+.btn-book {
+  display: inline-block;
+  margin: 30px auto 0;
+  padding: 12px 16px;
+  background-color: #d4af37;
+  color: #111;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 100px;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.btn-book:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
 }

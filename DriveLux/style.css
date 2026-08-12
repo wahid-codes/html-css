@@ -261,7 +261,7 @@ body {
   color: #ccc;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 30px;
   padding-bottom: 12px;
 }
 
@@ -305,6 +305,7 @@ body {
   display: flex;
   height: 22px;
   justify-content: space-around;
+  padding: 0 150px;
 }
 
 .logos-featured img {

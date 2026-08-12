@@ -1,3 +1,4 @@
+// COLORS
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -9,6 +10,7 @@
 
 @import "components/button";
 
+@import "layout/grid";
 @import "layout/header";
 
 @import "pages/home";

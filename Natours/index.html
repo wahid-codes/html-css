@@ -98,25 +98,25 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                srcset="img/nat-1.webp 300w, img/nat-1-large.webp 1000w"
                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                src="img/nat-1-large.jpg"
+                src="img/nat-1.webp"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
               />
 
               <img
-                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                srcset="img/nat-2.webp 300w, img/nat-2-large.webp 1000w"
                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                src="img/nat-2-large.jpg"
+                src="img/nat-2.webp"
                 alt="Photo 2"
                 class="composition__photo composition__photo--p2"
               />
 
               <img
-                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                srcset="img/nat-3.webp 300w, img/nat-3-large.webp 1000w"
                 sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                src="img/nat-3-large.jpg"
+                src="img/nat-3.webp"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
               />
@@ -319,10 +319,11 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-8.jpg"
+                src="img/nat-8.webp"
                 alt="Person on a tour"
                 class="story__img"
               />
+
               <figcaption class="story__caption">Mary Smith</figcaption>
             </figure>
             <div class="story__text">
@@ -343,10 +344,11 @@
           <div class="story">
             <figure class="story__shape">
               <img
-                src="img/nat-9.jpg"
+                src="img/nat-9.webp"
                 alt="Person on a tour"
                 class="story__img"
               />
+
               <figcaption class="story__caption">Jack Wilson</figcaption>
             </figure>
             <div class="story__text">
@@ -384,6 +386,7 @@
                     placeholder="Full Name"
                     id="name"
                     required
+                    autocomplete="name"
                   />
                   <label for="name" class="form__label">Full name</label>
                 </div>
@@ -395,6 +398,7 @@
                     placeholder="Email Adress"
                     id="email"
                     required
+                    autocomplete="email"
                   />
                   <label for="email" class="form__label">Email Adress</label>
                 </div>
@@ -495,8 +499,8 @@
     <div class="popup" id="popup">
       <div class="popup__content">
         <div class="popup__left">
-          <img src="img/nat-9.jpg" alt="Tour photo" class="popup__img" />
-          <img src="img/nat-8.jpg" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-9.webp" alt="Tour photo" class="popup__img" />
+          <img src="img/nat-8.webp" alt="Tour photo" class="popup__img" />
         </div>
         <div class="popup__right">
           <a href="#section-tours" class="popup__close">&times;</a>

@@ -96,7 +96,7 @@
     height: 1.75rem;
     width: 1.75rem;
     border-radius: 50%;
-    background-color: var(--color-Primary);
+    background-color: var(--color-primary);
     color: #fff;
     position: absolute;
     top: 1.5rem;
@@ -142,7 +142,7 @@
     left: 0;
     height: 100%;
     width: 3px;
-    background-color: var(--color-Primary);
+    background-color: var(--color-primary);
     transform: scaleY(0);
     transition:
       transform 0.2s,
@@ -151,7 +151,7 @@
   }
 
   &__item:active::before {
-    background-color: var(--color-Primary-light);
+    background-color: var(--color-primary-light);
   }
 
   &__item:hover::before,
@@ -181,4 +181,34 @@
   font-size: 1.2rem;
   text-align: center;
   padding: 2.5rem;
+}
+
+///////////////////////////
+////// GALLERY
+.gallery {
+  display: flex;
+
+  &__photo {
+    width: 100%;
+    display: block;
+  }
+}
+
+///////////////////////////
+////// HOTEL OVERVIEW
+.overview {
+  display: flex;
+
+  &__stars {
+    // flex: 1;
+    margin-right: auto;
+    background-color: orangered;
+  }
+
+  &__icon-star,
+  &__icon-location {
+    width: 1.75rem;
+    height: 1.75rem;
+    fill: var(--color-primary);
+  }
 }

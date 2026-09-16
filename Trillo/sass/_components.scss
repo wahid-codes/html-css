@@ -265,8 +265,17 @@
   background-color: transparent;
   transition: all 0.2s;
 
+  & span {
+    margin-left: 3px;
+    transition: margin-left 0.3s;
+  }
+
   &:hover {
     color: var(--color-grey-dark-1);
+
+    span {
+      margin-left: 0.8rem;
+    }
   }
   &:focus {
     outline: none;

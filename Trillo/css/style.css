@@ -110,6 +110,13 @@ body {
 }
 .user-nav__icon-box {
   position: relative;
+  transition: all 0.2s ease;
+  z-index: 1;
+}
+.user-nav__icon-box:hover {
+  transform: scale(1.05);
+  background-color: var(--color-grey-light-2);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 .user-nav__icon {
   height: 2.25rem;

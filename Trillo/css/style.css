@@ -257,6 +257,29 @@ body {
   width: 100%;
   display: block;
 }
+.gallery .gallery__item {
+  position: relative;
+  overflow: hidden;
+}
+.gallery .gallery__item img {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+.gallery .gallery__item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(183, 49, 134, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.gallery .gallery__item:hover img {
+  transform: scale(1.05);
+}
+.gallery .gallery__item:hover::after {
+  opacity: 1;
+}
 
 .overview {
   display: flex;

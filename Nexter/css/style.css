@@ -10,6 +10,11 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Nunito", sans-serif;
@@ -22,6 +27,12 @@ body {
   display: grid;
   grid-template-rows: 80vh min-content 40vw repeat(3, min-content);
   grid-template-columns: [sidebar-start] 8rem [sidebar-end full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+}
+@media only screen and (max-width: 62.5em) {
+  .container {
+    grid-template-rows: 6rem 80vh min-content 40vw repeat(3, min-content);
+    grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  }
 }
 
 .heading-4, .heading-3, .heading-2, .heading-1 {
@@ -100,8 +111,15 @@ body {
   grid-column: sidebar-start/sidebar-end;
   grid-row: 1/-1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 62.5em) {
+  .sidebar {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .nav-btn {
@@ -125,6 +143,18 @@ body {
 .nav-btn::after {
   transform: translateY(1.3rem);
 }
+@media only screen and (max-width: 62.5em) {
+  .nav-btn {
+    margin-top: 2.5rem;
+    margin-right: 3rem;
+  }
+  .nav-btn::before {
+    transform: translateY(-1.2rem);
+  }
+  .nav-btn::after {
+    transform: translateY(1rem);
+  }
+}
 
 .header {
   background-color: #54483a;
@@ -135,7 +165,7 @@ body {
   padding: 4rem 8rem 8rem 8rem;
   display: grid;
   grid-template-rows: 1fr min-content 6rem 1fr;
-  grid-template-columns: max-content;
+  grid-template-columns: max-content(min-content, max-content);
   grid-row-gap: 1.5rem;
   justify-content: center;
 }
@@ -147,6 +177,7 @@ body {
   align-self: start;
   justify-self: start;
   width: 22rem;
+  margin-top: 3rem;
 }
 .header__btn:hover, .header__btn:active {
   color: #092545;
@@ -154,7 +185,7 @@ body {
 }
 .header__seenon-text {
   display: grid;
-  grid-template-columns: 1fr max-content 1fr;
+  grid-template-columns: 1fr max-content minmax(6rem, min-content) 1fr;
   grid-column-gap: 1.5rem;
   align-items: center;
   font-size: 1.6rem;
@@ -171,9 +202,11 @@ body {
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 3rem;
   justify-items: center;
+  align-items: center;
 }
 .header__seenon-logos img {
-  height: 2.5rem;
+  max-height: 2.5rem;
+  max-width: 100%;
   filter: brightness(70%);
 }
 
